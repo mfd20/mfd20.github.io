@@ -1,0 +1,170 @@
+
+
+/* about */
+
+#about{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 60px 10% 0 ;
+}
+.ab-container{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+ max-width: 1200px;
+ column-gap: 40px;
+ width: 100%;
+ /* display: flex;
+ align-items: center;
+ justify-content: space-between;
+ width: 100%;
+ max-width: 1200px; */
+}
+.ab-left p{
+ text-align: justify;
+}
+.ab-left h1{
+ margin-bottom: 16px;
+}
+
+.ab-right img{
+ width: 100%;
+
+}
+
+/* two sec */
+#two-secs{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 60px 10%;
+}
+.two-sec{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ column-gap: 40px;
+ max-width: 1200px;
+}
+/* skill */
+.skil-set{
+ flex: 1;
+}
+.skill-head h1{
+ margin-bottom: 20px;
+}
+.skill-cont{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.skil-txt{
+ margin-right: 20px;
+}
+.skil-txt p{
+ margin-bottom: 23px;
+ font-size: 16px;
+ font-weight: 700;
+ text-wrap: nowrap;
+}
+.skil-txt p:last-child{
+ margin-bottom: 0;
+}
+.bars{
+ display: flex;
+ flex-direction: column;
+ flex: 1;
+ height: 95px;
+ justify-content: space-between;
+}
+/* loading */
+
+.bar-graph {
+  min-width: 150px;
+  width: 100%;
+  height: 10px; /* Adjust height as needed */
+  background-color: #d9d9d9; /* Background color of the bar graph */
+  border-radius: 4px; /* Optional: Add rounded corners */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.bar {
+  height: 100%;
+  background-color: #416BFF; /* Color of the bar */
+  color: #fff; /* Text color */
+  text-align: center;
+  line-height: 50px; /* Align text vertically in the middle */
+  transition: width 0.5s ease; /* Add smooth transition effect */
+}
+/* skill end */
+
+/* Education */
+
+.education{
+ display: flex;
+ flex-direction: column;
+ margin-left: 40px;
+}
+
+.timeline{
+ display: grid;
+ grid-template-columns: 50px 1fr;
+ row-gap: 25px;
+}
+.line{
+ background-color: #416BFF;
+ width: 6px;
+ height: 100%;
+ margin-left: 15px;
+ border-radius: 2px;
+}
+
+.edu-text h1{
+ margin-bottom: 20px;
+}
+.timeline-head{
+ font-weight: 700;
+ margin-bottom: 3px;
+}
+.timeline-yr{
+ margin-bottom: 3px;
+}
+
+
+/* For small devices such as smartphones, use a width of 0px to 767px */
+@media only screen and (max-width: 767px) {
+ #about{
+  padding: 70px 10% 0px 10%;
+ }
+ .ab-left{
+  order: 0;
+ }
+ .logo{
+  width: 90px;
+ }
+ .ab-container{
+  grid-template-columns: 1fr;
+  row-gap: 0;
+
+ }
+ .two-sec{
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+ }
+ .education{
+  margin-left: 0;
+ }
+ #two-secs{
+ padding: 50px 10%;
+}
+}
+
+/* For medium devices such as tablets, use a width of 768px to 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Your CSS rules for medium screens here */
+}
+
+/* For large devices such as laptops and desktops, use a width of 992px and above */
+@media only screen and (min-width: 992px) {
+  /* Your CSS rules for large screens here */
+}
